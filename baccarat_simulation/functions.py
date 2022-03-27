@@ -11,7 +11,7 @@ VALUE_MAP = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0]
 # It makes 8-deck shoe.
 def make_shoe():
   shoe = [i + 1 for i in range(13) for j in range(4) for k in range(8)]
-  random.shoeffle(shoe)
+  random.shuffle(shoe)
   return shoe
 
 # Compute the score of a hand.
